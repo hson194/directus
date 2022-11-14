@@ -1,0 +1,21 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:interface": "directus-extension build --type=interface --input=src/interfaces/image-uploads/index.ts --output=extensions/interfaces/image-uploads/index.js",
+    "build:endpoint": "directus-extension build --type=endpoint --input=src/endpoints/s3/index.ts --output=extensions/endpoints/s3/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1254.0",
+    "directus": "^9.20.4",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "sass": "^1.56.1"
+  }
+}
